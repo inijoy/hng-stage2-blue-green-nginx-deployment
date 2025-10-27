@@ -1,0 +1,5 @@
+# Node / Docker ignores
+node_modules/
+*.log
+.env
+docker-compose.override.yml
