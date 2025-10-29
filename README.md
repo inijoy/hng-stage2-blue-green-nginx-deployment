@@ -142,10 +142,10 @@ To remove unused images and networks:
 docker system prune -a
 
 Troubleshooting
-Issue	                            Possible Cause	                                            Fix
-NGINX not routing correctly	     Incorrect template or environment variable	             Re-run generate-nginx-conf.sh and restart NGINX
-Port conflict	                    8080 or 8081 already in use	                         Update docker-compose.yml ports
-Containers not starting	            Docker daemon not running	                             Restart Docker service
-“Permission denied” running script	Missing execute permission	                         Run chmod +x generate-nginx-conf.sh
+Issue	                                         Possible Cause	                                                Fix
+NGINX not routing correctly	                Incorrect template or environment variable	             Re-run generate-nginx-conf.sh and restart NGINX
+Port conflict	                              8080 or 8081 already in use	                             Update docker-compose.yml ports
+Containers not starting	                    Docker daemon not running	                               Restart Docker service
+“Permission denied” running script	        Missing execute permission	                             Run chmod +x generate-nginx-conf.sh
 
 
