@@ -1,0 +1,7 @@
+# Dockerfile.watcher
+FROM python:3.11-slim
+WORKDIR /app
+# Install the 'requests' library to communicate with the Slack API
+RUN pip install requests
+# CMD is defined in docker-compose.yml, but this acts as a good default
+CMD ["python", "log_watcher.py"]
